@@ -47,24 +47,28 @@ const UserHomeSector = () => {
             {loading && <p>Loading...</p>}
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
-            <table className='w-full border border-gray-300'>
-                <thead>
-                    <tr className='bg-gray-200'>
-                        <th className='border border-gray-300 px-4 py-2 text-left'>Name</th>
-                        <th className='border border-gray-300 px-4 py-2 text-left'>Last Name</th>
-                        <th className='border border-gray-300 px-4 py-2 text-left'>Position</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {users.map((user) => (
-                        <tr key={user.id} className='border border-gray-300 hover:bg-gray-100'>
+            <div className='flex justify-center items-center mt-12'>
+                <div className='w-full max-w-4xl'>
+                    <table className='w-full border border-gray-300'>
+                        <thead>
+                            <tr className='bg-gray-200'>
+                            <th className='border border-gray-300 px-4 py-2 text-left'>Name</th>
+                            <th className='border border-gray-300 px-4 py-2 text-left'>Last Name</th>
+                            <th className='border border-gray-300 px-4 py-2 text-left'>Position</th>
+                         </tr>
+                        </thead>
+                            <tbody>
+                            {users.map((user) => (
+                            <tr key={user.id} className='border border-gray-300 hover:bg-gray-100'>
                             <td className='border border-gray-300 px-4 py-2'>{user.name}</td>
                             <td className='border border-gray-300 px-4 py-2'>{user.lastname}</td>
                             <td className='border border-gray-300 px-4 py-2'>{user.position}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+                            </tr>
+                         ))}
+                    </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     );
 };
