@@ -31,3 +31,5 @@ const UserHomeSector = ({users}) => {
     </div>
   );
 };
+
+export default UserHomeSector;
