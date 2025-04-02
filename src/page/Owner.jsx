@@ -4,7 +4,7 @@ const Owner = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <h2 className='mt-12 mb-12 text-3xl font-bold '>May - GenMate A - 02</h2>
-      <img src="/public/mayProfile.jpg" alt="Profile" className='size'/>
+      <img src="./mayProfile.jpg" alt="Profile" className='size'/>
       <h4 className='mt-8 mb-8 text-xl font-medium'>Short Biography</h4>
       <p className='text-lg font-normal'>
         I am a budding Junior Software Developer currently honing my skills at Generation Thailand's bootcamp.
